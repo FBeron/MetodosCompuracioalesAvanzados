@@ -21,14 +21,14 @@ int main(int argc, char *argv[])
     int i;
   
     for( i = 1 ; 1 < argc; i++)
-          printf(argv[i]);
+          printf("%s \n",argv[i]);
     time_t start, end;
     double time_taken;
-    start = time(0);
+    start = time(NULL);
     
     fun(); 
-    end = time(0); 
-    time_taken = ((double)(end - start));
+    end = time(NULL); 
+    time_taken = ((double)(difftime(end,start)/1000);
   
     printf("fun() took %f seconds to execute \n", time_taken); 
     return 0; 
