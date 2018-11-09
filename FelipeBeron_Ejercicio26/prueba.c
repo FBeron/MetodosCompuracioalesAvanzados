@@ -27,7 +27,7 @@ int main(int argc, char **argv)
     start = time(NULL);
     
     fun(); 
-    end = timex(NULL); 
+    end = time(NULL); 
     time_taken = ((double)(difftime(end,start))/1000);
   
     printf("fun() took %f seconds to execute \n", time_taken); 
