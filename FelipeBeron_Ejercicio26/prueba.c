@@ -18,27 +18,17 @@ void fun()
 // The main program calls fun() and measures time taken by fun() 
 int main(int argc, char *argv[]) 
 {
-    FILE *fp, *fopen();
+    int i;
   
-    if (argc == 1)
-        filescopy(stdin);
-    else
-        while(--argc > 0)
-            if (( fp == fopen(*++argv, "r")) == NULL{
-                fprintf(stderr, "cat: can't open %s\n", *argv);
-                exit(1);
-            } else {
-                filecopy(fp);
-                fclose(fp);
-            }
-      exit(0);
-    // Calculate the time taken by fun() 
-    clock_t t; 
-    t = clock();
+    for( i = 1 ; 1 < argc; i++)
+          printf(argc[i]);
+    time_t start, end;
+    double time_taken;
+    start = time();
     
     fun(); 
-    t = clock() - t; 
-    double time_taken = ((double)t)/CLOCKS_PER_SEC; // in seconds 
+    end = time(); 
+    double time_taken = ((double)(end - start));
   
     printf("fun() took %f seconds to execute \n", time_taken); 
     return 0; 
