@@ -24,11 +24,11 @@ int main(int argc, char *argv[])
           printf(argv[i]);
     time_t start, end;
     double time_taken;
-    start = time();
+    start = time(0);
     
     fun(); 
-    end = time(); 
-    double time_taken = ((double)(end - start));
+    end = time(0); 
+    time_taken = ((double)(end - start));
   
     printf("fun() took %f seconds to execute \n", time_taken); 
     return 0; 
