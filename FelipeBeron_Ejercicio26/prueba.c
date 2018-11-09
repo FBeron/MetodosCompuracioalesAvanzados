@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     int i;
   
     for( i = 1 ; 1 < argc; i++)
-          printf(argc[i]);
+          printf(argv[i]);
     time_t start, end;
     double time_taken;
     start = time();
