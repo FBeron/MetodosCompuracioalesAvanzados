@@ -5,3 +5,6 @@ listing_12_2.x: listing_12_2.c
 listing_12_3.x: listing_12_3.c
   mpicc listing_12_3.c -lm -o listing_12_3.x
   ./listing_12_3.x
+
+clean:
+  rm -f listing_12_2.x listing_12_3.x
