@@ -3,8 +3,6 @@
 #PBS -m abe
 #PBS -N ejercicio25
 
-
-module load anaconda/python3
-cd $PBS_O_WORKDIR # este es el directorio desde donde se ejecuto qsub
+cd $PBS_O_WORKDIR
 make clean
 make
