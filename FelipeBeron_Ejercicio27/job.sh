@@ -3,7 +3,7 @@
 #PBS -m abe
 #PBS -N ejercicio27_Beron
 
-cd $PBS_O_WORKDIR
+cd f.beron10/MetodosComputacionalesAvanzados/FelipeBeron_Ejercicio27
 rm -f *.dat
 mpicc sample.c -o sample.x
 mpirun -np 10 ./sample.x.out 10000 0.0 1.0
