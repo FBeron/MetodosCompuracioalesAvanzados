@@ -5,3 +5,5 @@
 
 cd $PBS_O_WORKDIR
 mpicc listing_12_7.c -lm -o listing.x
+./linsting.x
+10000
