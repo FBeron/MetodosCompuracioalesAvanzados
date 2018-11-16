@@ -8,8 +8,9 @@ int main(int argc, char *argv[])
   int true = 1;
   int n, rank, size, i , len;
   
-  double PI_VALUES = 3.141592653589793238462643;
+  double PI_VALUE = 3.141592653589793238462643;
   
+  double mypi, pi, h, sum, x;
   double start_time, end_time, computation_time;
   
   char name[80];
