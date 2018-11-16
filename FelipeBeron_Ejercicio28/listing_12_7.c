@@ -1,5 +1,5 @@
 #include <stdio.h>
-#incliude <stdlib.h>
+#include <stdlib.h>
 #include <math.h>
 #include "mpi.h"
 
